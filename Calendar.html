@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Datepicker</title>
+  <link rel="stylesheet" href="styles/jquery-ui.css">
+    <script type="text/javascript" src="scripts/scripts.js"></script>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
+
+<script>
+
+</script>
+</head>
+<body>
+ 
+    <label>Date: </label><input type="date" id="date" required placeholder="mm/dd/yyyy" onkeyup="checkIfValidDate()"/> 
+<span id="dateError"style="color:red;font-size:12px;"></span>
+    <br>
+    <br>
+<label>Number of Days:</label>
+ <input type="text" id="daysToAdd" min="0" required value="365" onkeyup="checkIfValidNumber()">
+    <span id="inputError" style="color:red;font-size:12px;"></span>
+    <br><br>
+    
+<button onclick="displayCalendars()" id="displayButton">Display Date Range</button>
+<button onclick="clearCalendars()" id="clearFields">Clear</button>
+<br>
+<br>
+<p>Calendar Section:</p>
+<br>
+<div id="datepicker"></div>
+</body>
+</html>
